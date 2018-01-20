@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        h1{
+            color: #FFF;
+            background: #27AE60;
+            width: 100px;
+            float: right;
+        }
+        p{
+            color: #FFF;
+            background: #2ECC71;
+            width: 300px;
+            float: left;
+            position: relative;         /*绝对定位参照物*/
+        }
+        span{
+            color: #FFF;
+            background: orange;
+            display: block;
+            position: absolute;         /*绝对定位*/
+            z-index: -1;                /*使span深度小于页面默认深度*/
+            top: -50px;
+        }
+        h1,p{
+            clear:both;
+        }
+        /*h1,p{
+            float: left;
+        } h1和p的左浮动
+        h1{
+            display: inline;
+        }将h1设置为行内元素*/
+        </style>
+    </head>
+    <body>
+        <h1>tags</h1>
+        <p>Main html5 tags are: <span>header,section,article,aside and footer</span>, which bring a better form of samantic structure.</p>
+    </body>
+</html>
